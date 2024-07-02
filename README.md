@@ -1,1 +1,1 @@
-## Playing aroung with Twelve Labs API
+## Playing around with Twelve Labs API
