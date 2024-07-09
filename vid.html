@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link href="https://vjs.zencdn.net/8.12.0/video-js.css" rel="stylesheet">
+    <!-- Video.js base CSS -->
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" />
+
+    <!-- Fantasy -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/fantasy/index.css" rel="stylesheet">
+
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .video-container {
+            position: relative;
+            width: 640px;
+            height: 360px;
+        }
+
+        .video-js {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <video id="my-video" class="video-js vjs-theme-fantasy" controls preload="auto"
+            poster="https://deuqpmn4rs7j5.cloudfront.net/66841c0b7e3a05b242e8b11e/6686e9e6139f029878ae0e12/thumbnails/70c97543-c3c9-4503-87f5-96e04bb1e39a.0000001.jpg"
+            data-setup="{}">
+
+            <!--Change hrl link here-->
+            <source
+                src="https://deuqpmn4rs7j5.cloudfront.net/66841c0b7e3a05b242e8b11e/6686e9e6139f029878ae0e12/stream/70c97543-c3c9-4503-87f5-96e04bb1e39a.m3u8"
+                type="application/x-mpegURL" />
+
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+            </p>
+        </video>
+    </div>
+
+    <script src="https://vjs.zencdn.net/8.12.0/video.min.js"></script>
+</body>
+
+</html>
